@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i&display=swap');
+
+.flex_wrap{
+    display:flex;	
+    align-items:flex-start;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    
+    justify-content: space-around;
+}
+
+
+section#contatti{
+    background-color: #f8f8f8;
+
+    padding: 3% 0;
+}
+
+h1{
+    text-align: center;
+}
+
+#form{
+    background-color: #B2E3E4;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+form div{
+   /* background-color: burlywood;*/
+    
+    margin: 10px;
+}
+
+form div:nth-child(4){
+    align-items:center;
+}
+
+form div label{
+   /* background-color: lightgreen;*/
+    width: 5.5rem;
+    
+    padding-right: 1rem;
+}
+
+form div textarea{
+    /*background-color: chartreuse;*/
+    min-height: 10rem;
+}
+
+div.pulsante{
+    text-align: center;
+}
+
+div.privacy label{
+    width: 100%!important;
+}
+
+h3{
+    text-align: center;
+
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+ul{
+    /*background-color: chocolate;*/    
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+    
+    list-style: none;
+    
+    text-decoration: none;
+    text-align: center;
+}
+
+/********************************* Media Query ************************************/
+@media only screen and (min-width: 1027px){
+
+}
+
+@media only screen and (max-width: 1026px){
+    
+    form{
+        background-color: coral;
+    }
+}

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Documento senza titolo</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link href="style.css" rel="stylesheet" type="text/css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Ultima versione di jQuery (minified) -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+        <!-- Ultima versione di jquery.validate (minfied) -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+
+        <script type="text/javascript" src="js/function.js"></script>
+    </head>
+
+    <body>
+        
+
+<section id="contatti" class="flex_wrap">
+    
+    <div id="form" action="#" name="modulo-contatto" method="POST" autocomplete="on" >
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" maxlength="90" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="mail">E-Mail:</label>
+                <input class="form-control" type="email" maxlength="200" name="mail" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Telefono:</label>
+                <input class="form-control" type="tel" maxlength="20" pattern="[0-9] [+]" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label form="messaggio">Messaggio:</label>
+                <textarea class="form-control" pattern="[0-9] [A-Za-z] [()]" maxlength="1000" name="messaggio">
+                    
+                </textarea>
+            </div>
+            
+            <!-- Privacy -->
+            <div class="form-group privacy">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" name="privacy" required>
+                    <label class="form-check-label" for="privacy">
+                        Agree to terms and conditions
+                    </label>
+                </div>
+            </div>
+            <!--------------------------->
+            <div class="pulsante form-group">
+                <button type="submit" class="btn btn-info">Invia</button>
+                <!--<input type="submit" value="Invia" class="btn btn-info">-->
+            </div>
+        </form>
+        
+        <div id="info-contatto">
+            <h3>I Nostri Contatti</h3>
+            
+            <ul>
+                <li>Piazza San Marco (Venezia)</li>
+                <li>info@veneziamusei.com</li>
+                <li>Tel. +39 0426 55 88 77</li>
+                
+            </ul>
+        </div>
+    </div>
+
+</section>
+    </body>
+</html>
